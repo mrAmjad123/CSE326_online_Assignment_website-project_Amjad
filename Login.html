@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+       <title>Login</title>
+<script>
+function validation()
+{
+var a=document.getElementById("t1").value;
+var b=document.getElementById("t2").value;
+var c=document.getElementById("t3").value;
+if(a=="" || b=="" || c=="")
+alert("Please Fill the required details")
+
+if(!document.getElementById("c1").checked && !document.getElementById("c2").checked
+&& !document.getElementById("c3").checked)
+alert("Please select atleast one Subject")
+
+atpos=c.indexOf("@");
+dotpos=c.lastIndexOf(".");
+if(atpos<1 || (dotpos - atpos<3))
+
+      alert("Please enter correct Email ID");
+
+
+}
+
+</script>
+</head>
+<body>
+<h1 align="center">Complete your Registration process</h1>
+<form align="center">
+<table align="center" border=2px>
+<tr><th>Username*:</th><th><input type="text" id="t1"></tr>
+<tr><th>  Email*:</th><th><input type="text" id="t2"></tr>
+<tr><th>Password*:</th><th><input type="password" id="t3"></tr>
+<tr><th> Select Subject*:</th><th><input type="checkbox" id="c1">Mathematics
+<input type="checkbox" id="c2" >English
+<input type="checkbox" id="c3">Physics
+<input type="checkbox" id="c4">Chemistry</th></tr>
+<tr><th colspan=2><input type="button" value="Sign Up" onclick="validation()"></th> </tr>
+</table
+</form>
+</body>
+
+</html>

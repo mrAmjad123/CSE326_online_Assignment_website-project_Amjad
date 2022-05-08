@@ -1,0 +1,21 @@
+*{
+   margin: 0;
+   padding: 0:
+}
+
+html{
+      scroll-behavior: smooth;
+}
+
+.site-name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.navbar{
+      display: flex;
+      align-items: left;
+      justify-content: left;
+      position: sticky;
+      top: 0;
